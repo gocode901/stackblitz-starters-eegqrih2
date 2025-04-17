@@ -11,7 +11,7 @@ const ProductSchema= new mongoose.Schema({
         type:String,
     },
     productImage:{
-        type: String,
+        type: String, // here we try to use the url of the image and other things also which is stored at cloud n all
     },
     price:{
         type: Number,
