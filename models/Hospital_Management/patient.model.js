@@ -5,7 +5,6 @@ const PatientSchema= new mongoose.Schema({
     name:{
         type: String,
         required: true,
-
     },
     address:{
         type: String,
@@ -25,7 +24,8 @@ const PatientSchema= new mongoose.Schema({
         required : true,
     },
     admitedIn:{
-        
+        type: mongoose.Schema.Type.ObjectId,
+        ref: "Hospital"
     }
 },{ timestamps: true})
 
